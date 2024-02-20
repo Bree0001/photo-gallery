@@ -1,0 +1,74 @@
+*{
+font-family: sans-serif;
+background-color: rgb(155, 120, 120);
+}
+.logo{
+    color: black;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top:10px;
+    font-size: medium;
+    font-weight: 500;
+    font-family: cursive;
+    box-shadow: inset;
+}
+.header{
+    float: right;
+    padding: 20px;
+    word-spacing: 20px;
+    
+}
+.header a:link{
+    text-decoration: none;
+    color: wheat;
+}
+.header a:hover{
+    background-color: darkgrey;
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    text-decoration: underline;
+}
+.h1{
+    font-family: cursive;
+    text-align: center;
+}
+.h1 br{
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card{
+    width: 280px;
+    height: auto;
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform:translate(20px)
+}
+.card:before{
+    content:"";
+    top: 0;
+    left: 0;
+    display: block;width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5) rbga(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
